@@ -1,0 +1,85 @@
+.project__content {
+        position: relative;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: var(--container);
+        padding: 2.5rem;
+}
+
+.project__img-2 {
+        height: 12rem;
+        width: 13rem;
+}
+
+.project__container {
+        grid-template-columns: repeat(3, 270px);
+        justify-content: center;
+        column-gap: 1.8rem;
+}
+
+.project__title {
+        font-size: var(--h3-font-size);
+        margin-bottom: var(--mb-1);
+        font-weight: var(--font-medium);
+}
+
+
+
+/* =============================Breakpoints================== */
+@media screen and (max-wdith: 992px) {
+        .project__container {
+                grid-template-columns: repeat(3, 218px);
+        }
+}
+
+@media screen and (max-width:768px) {
+        .project__container {
+                grid-template-columns: repeat(2, 1fr);
+        }
+
+        .project__content {
+                padding: 1.5rem;
+        }
+
+        .project__img {
+                font-size: 1.5rem;
+        }
+}
+
+@media screen and (min-width:371px) and (max-width:767px) {
+        .project__container {
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 0.5rem;
+        }
+
+        .project__content {
+                padding: 1.5rem;
+        }
+
+        .project__img {
+                font-size: 1.5rem;
+        }
+
+}
+
+@media screen and (max-width:370px) {
+        .project__container {
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 0.1rem;
+        }
+
+        .project__content {
+                padding: 0.5rem;
+                margin: 1rem
+        }
+
+        .project__img {
+                height: 8rem;
+                width: 8rem;
+        }
+
+        .project__img-2 {
+        height: 8rem;
+        width: 8rem;
+}
+
+}

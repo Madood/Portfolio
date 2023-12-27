@@ -1,0 +1,88 @@
+.footer {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);      
+}
+
+.footer__container{
+        padding: 2rem 0 6rem;
+}
+
+.footer__title {
+        text-align: center;
+        margin-bottom: var(--mb-2);
+
+}
+
+.footer__list {
+        display: flex;
+        justify-content: center;
+        column-gap: 1.5rem;
+        margin-bottom: var(--mb-2);
+}
+
+.footer__title,
+.footer__link {
+        color: var(--title-color);
+}
+
+
+.footer__link:hover {
+        color: var(--title-color-dark);
+}
+
+.footer__img:hover{
+       color: aliceblue;
+
+}
+
+.footer__social {
+        display: flex;
+        justify-content: center;
+        column-gap: 1.25rem;
+}
+
+.footer__img{
+        width: 25px;
+        height: 25px;
+
+}
+
+.footer__social-link {
+        /* background-color: var(--title-color); */
+        color: var(--container-color);
+        font-size: 1.125rem;
+        padding: 0.4rem;
+        border-radius: 0.5rem;
+        display: inline-flex;
+}
+
+.footer__social-link:hover {
+       border: 3px solid black; 
+}
+
+.footer__copy {
+        display: block;
+        margin-top: 4.5rem;
+        color: var(--title-color);
+        text-align: center;
+        font-size: var(--smaller-font-size);
+}
+
+/* =============================Breakpoints================== */
+@media screen and (max-wdith: 992px) {
+        .footer__container {
+                grid-template-columns: repeat(3, 218px);
+        }
+}
+
+@media screen and (max-width:768px) {
+      
+}
+@media screen and (min-width:371px) and (max-width:767px) {
+       
+
+}
+
+@media screen and (max-width:370px) {
+       
+
+}
